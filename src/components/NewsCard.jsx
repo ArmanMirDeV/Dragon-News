@@ -1,6 +1,6 @@
 
 import { CiShare2 } from "react-icons/ci";
-import { FaRegBookmark, FaRegEye } from "react-icons/fa";
+import { FaRegBookmark, FaRegEye, FaStar } from "react-icons/fa";
 
 const NewsCard = ({ news }) => {
   const {
@@ -74,8 +74,8 @@ const NewsCard = ({ news }) => {
           {/* Rating */}
           <div className="flex items-center gap-1 text-orange-500">
             {Array.from({ length: rating.number }).map((_, i) => (
-              <span key={i} className="text-lg">
-                ★
+              <span key={i} className="text-sm">
+                <FaStar/>
               </span>
             ))}
             <span className="ml-1 text-gray-700 text-sm">
