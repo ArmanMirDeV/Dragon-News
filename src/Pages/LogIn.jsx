@@ -6,8 +6,8 @@ const LogIn = () => {
     <div>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left py-5">
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-pink-600 via-red-500 to-purple-600 bg-clip-text text-transparent">
+          <div className="text-center lg:text-left py-5 ">
+            <h1 className="text-3xl font-bold ">
               Login Your Account
             </h1>
           </div>
