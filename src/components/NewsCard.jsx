@@ -1,9 +1,11 @@
 
 import { CiShare2 } from "react-icons/ci";
 import { FaRegBookmark, FaRegEye, FaStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
   const {
+    id,
     title,
     thumbnail_url,
     author,
@@ -63,10 +65,10 @@ const NewsCard = ({ news }) => {
         </p>
 
         {/* Read more */}
-        <div className="mt-2">
-          <a className="text-orange-500 font-semibold text-sm hover:underline cursor-pointer">
+        <div  className="mt-2">
+          <Link to={`/news-Details/${id}`} className="text-orange-500 font-semibold text-sm hover:underline cursor-pointer">
             Read More
-          </a>
+          </Link>
         </div>
 
         {/* Footer: Rating and Views */}
